@@ -1,1 +1,6 @@
-# SFO-EWPT-light-scalar
+# -*- org -*-
+#+TITLE: Strong First Order Electroweak Phase Transition from a Light Scalar Extension
+#+AUTHOR: Isaac R. Wang
+#+EMAIL: isaac.wang.us@gmail.com
+#+STARTUP: fold
+* SFO-EWPT-light-scalar
