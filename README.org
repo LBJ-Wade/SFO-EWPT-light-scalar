@@ -3,4 +3,3 @@
 #+AUTHOR: Isaac R. Wang
 #+EMAIL: isaac.wang.us@gmail.com
 #+STARTUP: fold
-* SFO-EWPT-light-scalar
