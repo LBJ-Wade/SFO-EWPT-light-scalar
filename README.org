@@ -3,3 +3,13 @@
 #+AUTHOR: Isaac R. Wang
 #+EMAIL: isaac.wang.us@gmail.com
 #+STARTUP: fold
+* Table of Contents :TOC:
+- [[#introduction][Introduction]]
+- [[#mass-spectrum][Mass spectrum]]
+
+* Introduction
+This is the source code for the paper "Strong First Order Electroweak Phase Transition from a Natually Light Singlet Scalar".
+
+* Mass spectrum
+The scalar mass spectrum are calculated in Mathematica code [[file:mass_spectrum.nb][mass_spectrum.nb]].
+Masses for other relavent particles are trivial and did not included in any code.
