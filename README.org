@@ -12,4 +12,7 @@ This is the source code for the paper "Strong First Order Electroweak Phase Tran
 
 * Mass spectrum
 The scalar mass spectrum are calculated in Mathematica code [[file:mass_spectrum.nb][mass_spectrum.nb]].
-Masses for other relavent particles are trivial and did not included in any code.
+Masses for other relevant particles are trivial and did not included in any code.
+
+Parametrization are tried. But it seems Mathematica cannot solve it!
+Currently, I tried 4 equations written in the code with explanations. Need to discuss with others.
