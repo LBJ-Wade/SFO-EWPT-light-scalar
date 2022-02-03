@@ -5,14 +5,13 @@
 #+STARTUP: fold
 * Table of Contents :TOC:
 - [[#introduction][Introduction]]
-- [[#mass-spectrum][Mass spectrum]]
+- [[#mass-spectrum-and-parametrization][Mass spectrum and parametrization]]
 
 * Introduction
 This is the source code for the paper "Strong First Order Electroweak Phase Transition from a Natually Light Singlet Scalar".
 
-* Mass spectrum
-The scalar mass spectrum are calculated in Mathematica code [[file:mass_spectrum.nb][mass_spectrum.nb]].
-Masses for other relevant particles are trivial and did not included in any code.
+* Mass spectrum and parametrization
+The scalar mass spectrum are calculated in Mathematica code [[file:mass_spectrum/mass_spectrum.nb][mass_spectrum.nb]].
+Masses for other relevant particles such as gauge bosons and fermions are trivial, and did not included in any code.
 
-Parametrization are tried. But it seems Mathematica cannot solve it!
-Currently, I tried 4 equations written in the code with explanations. Need to discuss with others.
+We need to transfer from the bare parameters to observable physical parameters. This process is performed both by hand and by Mathematica in the same [[file:mass_spectrum/mass_spectrum.nb][Mathematica code]]. The hand-written calculation can be found in [[file:mass_spectrum/Parametrization.pdf][PDf file]].
