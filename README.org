@@ -20,11 +20,4 @@ Masses for other relevant particles such as gauge bosons and fermions are trivia
 
 We need to transfer from the bare parameters to observable physical parameters. This process is performed both by hand and by Mathematica in the same [[file:model_setup/mass_spectrum.nb][code]]. The hand-written calculation note can be found [[file:model_setup/Parametrization.pdf][here]].
 ** UV scale
-This model predicts that the Higgs potential must become unstable on some UV scale, which depends on the new parameters. Above that UV scale, new physics must enter to alternate the running. This is calculated in [[file:model_setup/instability.nb][instability.nb]].
-
-Currently there are some remaining problems:
-- How can the new parameters modify the running? Are there any existing calculations for similar model?
-- The convention of the scale can change the running result?
-- Why we run =i=Range{-2,3}=? I guess there should be some reason in the paper who originally used this code?
-- What is tabSMvp?
-- Will the new parameters run by themselves?
+This model predicts that the Higgs potential must become unstable on some UV scale, which depends on the new parameters. Above that UV scale, new physics must enter to alternate the running. This is calculated in [[file:model_setup/instability.nb][instability.nb]]. The physics running of the trilinear coupling is included.
