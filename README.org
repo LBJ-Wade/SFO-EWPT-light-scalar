@@ -8,6 +8,7 @@
 - [[#model-setup][Model setup]]
   - [[#mass-spectrum-and-parametrization][Mass spectrum and parametrization]]
   - [[#uv-scale][UV scale]]
+- [[#phase-transition][Phase Transition]]
 
 * Introduction
 This is the source code for the paper "Strong First Order Electroweak Phase Transition from a Naturally Light Singlet Scalar".
@@ -21,3 +22,5 @@ Masses for other relevant particles such as gauge bosons and fermions are trivia
 We need to transfer from the bare parameters to observable physical parameters. This process is performed both by hand and by Mathematica in the same [[file:model_setup/mass_spectrum.nb][code]]. The hand-written calculation note can be found [[file:model_setup/Parametrization.pdf][here]].
 ** UV scale
 This model predicts that the Higgs potential must become unstable on some UV scale, which depends on the new parameters. Above that UV scale, new physics must enter to alternate the running. This is calculated in [[file:model_setup/instability.nb][instability.nb]]. The physics running of the trilinear coupling is included.
+* Phase Transition
+The phase transition is calculated both semi-analytically using the high-temperature expansion and in full numerical analysis. The coefficients of high-T effective potential are calculated in [[file:phase_transition/High-T-potential.pdf][hand-written note]], and numerical plots are done in [[file:phase_transition/Veff_highT.nb][Mathematica code]].
