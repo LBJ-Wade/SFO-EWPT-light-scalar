@@ -4,7 +4,7 @@
 #+EMAIL: isaac.wang.us@gmail.com
 
 * Introduction
-This is the source code for the paper "Strong First Order Electroweak Phase Transition from a Naturally Light Singlet Scalar".
+This is the source code for the paper "Strong First Order Electroweak Phase Transition from a Naturally Light Singlet Scalar". All the plots in the paper are run by the [[file:Combine_Plots.nb][main Mathematica code]].
 
 * Table of Contents :TOC:
 - [[#introduction][Introduction]]
@@ -12,6 +12,7 @@ This is the source code for the paper "Strong First Order Electroweak Phase Tran
   - [[#mass-spectrum-and-parametrization][Mass spectrum and parametrization]]
   - [[#uv-scale][UV scale]]
 - [[#phase-transition][Phase Transition]]
+  - [[#high-temperature-expansion][High-temperature expansion]]
 
 * Model setup
 This section talks about some fundamental features of this new model. The problems talked here are related to new physics at zero temperature.
@@ -23,4 +24,9 @@ We need to transfer from the bare parameters to observable physical parameters. 
 ** UV scale
 This model predicts that the Higgs potential must become unstable on some UV scale, which depends on the new parameters. Above that UV scale, new physics must enter to alternate the running. This is calculated in [[file:model_setup/instability.nb][instability.nb]]. The physics running of the trilinear coupling is included. Different approximations are applied and explained there.
 * Phase Transition
-The phase transition is calculated both semi-analytically using the high-temperature expansion and in full numerical analysis. The coefficients of high-T effective potential are calculated in [[file:phase_transition/High-T-potential.pdf][hand-written note]], and numerical plots are done in [[file:phase_transition/Veff_highT.nb][Mathematica code]].
+The phase transition is calculated both semi-analytically using the high-temperature expansion and in full numerical analysis.
+
+** High-temperature expansion
+The high-temperature expansion of the scalar effective potential offers a convenient way to perform analytical computation. The analytical calculation of high-T effective potential are calculated both in [[file:phase_transition/High-T-potential.pdf][hand-written note]], and in [[file:phase_transition/highT.nb][Mathematica code]]. Plots can also be find in the same Mathematica code.
+
+Near the boundary where the critical temperature is ill-defined, the critical temperature quickly diverges up and plots suffer from numerical fluctuation.
