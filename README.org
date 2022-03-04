@@ -4,7 +4,7 @@
 #+EMAIL: isaac.wang.us@gmail.com
 
 * Introduction
-This is the source code for the paper "Strong First Order Electroweak Phase Transition from a Naturally Light Singlet Scalar". All the plots in the paper are run by the [[file:Combine_Plots.nb][main Mathematica code]].
+This is the source code for the paper "Strong First Order Electroweak Phase Transition from a Naturally Light Singlet Scalar". All the plots in the paper are run by the [[file:Combine.nb][Main Mathematica file]].
 
 * Table of Contents :TOC:
 - [[#introduction][Introduction]]
@@ -13,6 +13,8 @@ This is the source code for the paper "Strong First Order Electroweak Phase Tran
   - [[#uv-scale][UV scale]]
 - [[#phase-transition][Phase Transition]]
   - [[#high-temperature-expansion][High-temperature expansion]]
+- [[#higgs-signal][Higgs Signal]]
+  - [[#new-scalar-production-and-detection][New scalar production and detection]]
 
 * Model setup
 This section talks about some fundamental features of this new model. The problems talked here are related to new physics at zero temperature.
@@ -30,3 +32,10 @@ The phase transition is calculated both semi-analytically using the high-tempera
 The high-temperature expansion of the scalar effective potential offers a convenient way to perform analytical computation. The analytical calculation of high-T effective potential are calculated both in [[file:phase_transition/High-T-potential.pdf][hand-written note]], and in [[file:phase_transition/highT.nb][Mathematica code]]. Plots can also be find in the same Mathematica code.
 
 Near the boundary where the critical temperature is ill-defined, the critical temperature quickly diverges up and plots suffer from numerical fluctuation.
+
+* Higgs Signal
+The Higgs and the new light scalar are mixed, leading to new signal. We calculated the Higgs exotic decay as well as the new scalar production and detection.
+** New scalar production and detection
+Scalar coupling with SM particles under our convention are calculated by hand. The decay diagrams are calculated both by hand and by mathematica. The mathematica file is based on FeynCalc and can be found in [[file:collider/Scalar_Signal.pdf][Scalar_Signal.pdf]]. The mathematica file can be found in [[file:collider/scalar_decay.nb][scalar_decay.nb]].
+
+The collider bounds are derived from the references described in the paper. The code is in [[file:collider/LEP.nb][LEP.nb]].
