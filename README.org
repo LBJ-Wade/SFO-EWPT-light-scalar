@@ -22,20 +22,19 @@ This section talks about some fundamental features of this new model. The proble
 The scalar mass spectrum are calculated in Mathematica code [[file:model_setup/mass_spectrum.nb][mass_spectrum.nb]].
 Masses for other relevant particles such as gauge bosons and fermions are trivial, and did not included in any code.
 
-We need to transfer from the bare parameters to observable physical parameters. This process is performed both by hand and by Mathematica in the same [[file:model_setup/mass_spectrum.nb][code]]. The hand-written calculation note can be found [[file:model_setup/Parametrization.pdf][here]].
+We need to transfer from the bare parameters to observable physical parameters. This process is performed by Mathematica in the same [[file:model_setup/mass_spectrum.nb][code]].
 ** UV scale
 This model predicts that the Higgs potential must become unstable on some UV scale, which depends on the new parameters. Above that UV scale, new physics must enter to alternate the running. This is calculated in [[file:model_setup/instability.nb][instability.nb]]. The physics running of the trilinear coupling is included. Different approximations are applied and explained there.
 * Phase Transition
 The phase transition is calculated both semi-analytically using the high-temperature expansion and in full numerical analysis.
 
 ** High-temperature expansion
-The high-temperature expansion of the scalar effective potential offers a convenient way to perform analytical computation. The analytical calculation of high-T effective potential are calculated both in [[file:phase_transition/High-T-potential.pdf][hand-written note]], and in [[file:phase_transition/highT.nb][Mathematica code]]. Plots can also be find in the same Mathematica code.
+The high-temperature expansion of the scalar effective potential offers a convenient way to perform analytical computation. The analytical calculation of high-T effective potential are calculated in [[file:phase_transition/highT.nb][Mathematica code]]. Plots can also be find in the same Mathematica code.
 
 Near the boundary where the critical temperature is ill-defined, the critical temperature quickly diverges up and plots suffer from numerical fluctuation.
 
 * Higgs Signal
 The Higgs and the new light scalar are mixed, leading to new signal. We calculated the Higgs exotic decay as well as the new scalar production and detection.
 ** New scalar production and detection
-Scalar coupling with SM particles under our convention are calculated by hand. The decay diagrams are calculated both by hand and by mathematica. The mathematica file is based on FeynCalc and can be found in [[file:collider/Scalar_Signal.pdf][Scalar_Signal.pdf]]. The mathematica file can be found in [[file:collider/scalar_decay.nb][scalar_decay.nb]].
-
-The collider bounds are derived from the references described in the paper. The code is in [[file:collider/LEP.nb][LEP.nb]].
+Scalar coupling with SM particles under our convention are calculated by hand.
+The collider bounds are derived from the references described in the paper. The code for the LEP bound of scalar production is in [[file:collider/LEP.nb][LEP.nb]]. The one for the Higgs exotic decay search from LHC can be found in [[file:collider/Higgs_exotic.nb][Higgs_exotic.nb]].
