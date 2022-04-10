@@ -1,40 +1,21 @@
 # -*- org -*-
-#+TITLE: Strong First Order Electroweak Phase Transition from a Light Scalar Extension
+#+TITLE: Touching the unstable scale
 #+AUTHOR: Isaac R. Wang
 #+EMAIL: isaac.wang.us@gmail.com
 
 * Introduction
-This is the source code for the paper "Strong First Order Electroweak Phase Transition from a Naturally Light Singlet Scalar". All the plots in the paper are run by the [[file:Combine.nb][Main Mathematica file]].
+This branch records some early trial on the unstable scale. The calculation results from the code in this branch are trials that fails to give results to be shown in the final paper. But the trial process are useful and should be recorded. To get the code that gives the results in the paper, please see the master branch.
 
-* Table of Contents :TOC:
-- [[#introduction][Introduction]]
-- [[#model-setup][Model setup]]
-  - [[#mass-spectrum-and-parametrization][Mass spectrum and parametrization]]
-  - [[#uv-scale][UV scale]]
-- [[#phase-transition][Phase Transition]]
-  - [[#high-temperature-expansion][High-temperature expansion]]
-- [[#higgs-signal][Higgs Signal]]
-  - [[#new-scalar-production-and-detection][New scalar production and detection]]
+* Bounce solution for the Euclidean action of tunneling rate
+The effective potential at the zero temperature is calculated in both 2d dynamics, and in 1d dynamics with the light scalar integrated out.
 
-* Model setup
-This section talks about some fundamental features of this new model. The problems talked here are related to new physics at zero temperature.
-** Mass spectrum and parametrization
-The scalar mass spectrum are calculated in Mathematica code [[file:model_setup/mass_spectrum.nb][mass_spectrum.nb]].
-Masses for other relevant particles such as gauge bosons and fermions are trivial, and did not included in any code.
+We use =Mathematica= code [[file:Vacuum_stability_1d.nb][stability_1d]] for the bounce solution of the 1d dynamics. No proper bounce solution are found there.
 
-We need to transfer from the bare parameters to observable physical parameters. This process is performed by Mathematica in the same [[file:model_setup/mass_spectrum.nb][code]].
-** UV scale
-This model predicts that the Higgs potential must become unstable on some UV scale, which depends on the new parameters. Above that UV scale, new physics must enter to alternate the running. This is calculated in [[file:model_setup/instability.nb][instability.nb]]. The physics running of the trilinear coupling is included. Different approximations are applied and explained there.
-* Phase Transition
-The phase transition is calculated both semi-analytically using the high-temperature expansion and in full numerical analysis.
+We use =Mathematica= code [[file:Vacuum_stability_2d.nb][stability_2d]] to plot the 2d effective potential.
 
-** High-temperature expansion
-The high-temperature expansion of the scalar effective potential offers a convenient way to perform analytical computation. The analytical calculation of high-T effective potential are calculated in [[file:phase_transition/highT.nb][Mathematica code]]. Plots can also be find in the same Mathematica code.
+The 2d dynamics is also tried in [[file:Vacuum_stability.ipynb][jupyter notebook]] with =cosmoTransition= package.
 
-Near the boundary where the critical temperature is ill-defined, the critical temperature quickly diverges up and plots suffer from numerical fluctuation.
+* Running coupling
+Running coupling are calculated to check the energy scale where the effective quartic coupling becomes negative. See [[file:instability.nb][code]] for detail.
 
-* Higgs Signal
-The Higgs and the new light scalar are mixed, leading to new signal. We calculated the Higgs exotic decay as well as the new scalar production and detection.
-** New scalar production and detection
-Scalar coupling with SM particles under our convention are calculated by hand.
-The collider bounds are derived from the references described in the paper. The code for the LEP bound of scalar production is in [[file:collider/LEP.nb][LEP.nb]]. The one for the Higgs exotic decay search from LHC can be found in [[file:collider/Higgs_exotic.nb][Higgs_exotic.nb]].
+This result is not shown in the final paper since we have a more detailed treatment for the vacuum stability problem.

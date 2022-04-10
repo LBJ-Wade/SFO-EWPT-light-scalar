@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    258713,       5588]
-NotebookOptionsPosition[    253266,       5496]
-NotebookOutlinePosition[    253672,       5512]
-CellTagsIndexPosition[    253629,       5509]
+NotebookDataLength[    249663,       5383]
+NotebookOptionsPosition[    245658,       5309]
+NotebookOutlinePosition[    246064,       5325]
+CellTagsIndexPosition[    246021,       5322]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -5304,193 +5304,6 @@ byfz3j2Be3Yi4xSvXfsj79w7/R6bdlfsf6xWz9tUp69q0azeAcGsS4Y=
   "Out[237]=",ExpressionUUID->"fa3944b4-8d51-48c7-8ae5-3e241f9f7f42"]
 }, Open  ]]
 }, Open  ]]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell["Output result", "Section",ExpressionUUID->"ac60b7b7-1c8b-4967-8404-39a03f94d565"],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"scalelist", "=", 
-   RowBox[{"Flatten", "[", 
-    RowBox[{
-     RowBox[{"Table", "[", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{"mS", ",", "sin\[Theta]", ",", 
-         RowBox[{"instable\[ReversePrime]scale", "[", 
-          RowBox[{"mS", ",", "sin\[Theta]"}], "]"}]}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"mS", ",", "0", ",", "16", ",", "0.2"}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"sin\[Theta]", ",", "0", ",", "0.32", ",", "0.005"}], "}"}]}],
-       "]"}], ",", "1"}], "]"}]}], ";"}]], "Input",
- CellLabel->
-  "In[238]:=",ExpressionUUID->"89ff2e38-6a76-4b02-830e-9ba25c1c9324"],
-
-Cell[BoxData[
- TemplateBox[{
-  "FindRoot", "lstol", 
-   "\"The line search decreased the step size to within tolerance specified \
-by AccuracyGoal and PrecisionGoal but was unable to find a sufficient \
-decrease in the merit function. You may need more than \
-\\!\\(\\*RowBox[{\\\"MachinePrecision\\\"}]\\) digits of working precision to \
-meet these tolerances.\"", 2, 238, 4, 25280903652193696121, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellLabel->
-  "During evaluation of \
-In[238]:=",ExpressionUUID->"8e8aba9f-72b2-4f11-815e-8e280bc988b8"],
-
-Cell[BoxData[
- TemplateBox[{
-  "FindRoot", "nlnum", 
-   "\"The function value \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]\\) is \
-not a list of numbers with dimensions \\!\\(\\*RowBox[{\\\"{\\\", \\\"1\\\", \
-\\\"}\\\"}]\\) at \\!\\(\\*RowBox[{\\\"{\\\", \\\"x\\\", \\\"}\\\"}]\\) = \\!\
-\\(\\*RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"12.333815673877009`\\\", \\\"\
-\[VeryThinSpace]\\\"}], \\\"+\\\", RowBox[{\\\"0.5610518587417176`\\\", \\\" \
-\\\", \\\"\[ImaginaryI]\\\"}]}], \\\"}\\\"}]\\).\"", 2, 238, 5, 
-   25280903652193696121, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellLabel->
-  "During evaluation of \
-In[238]:=",ExpressionUUID->"6690cbfc-f77d-4804-912f-ef923632fb7c"],
-
-Cell[BoxData[
- TemplateBox[{
-  "FindRoot", "nlnum", 
-   "\"The function value \\!\\(\\*RowBox[{\\\"{\\\", \
-RowBox[{RowBox[{\\\"2115.881352`\\\", \\\" \\\", \
-RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}]}], \
-\\\"-\\\", SuperscriptBox[RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
-\[RightSkeleton]\\\"}], \\\"2\\\"]}], \\\"}\\\"}]\\) is not a list of numbers \
-with dimensions \\!\\(\\*RowBox[{\\\"{\\\", \\\"1\\\", \\\"}\\\"}]\\) at \
-\\!\\(\\*RowBox[{\\\"{\\\", \\\"x\\\", \\\"}\\\"}]\\) = \
-\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"12.343954240854666`\\\", \\\"\
-\[VeryThinSpace]\\\"}], \\\"+\\\", RowBox[{\\\"0.9284804836983578`\\\", \\\" \
-\\\", \\\"\[ImaginaryI]\\\"}]}], \\\"}\\\"}]\\).\"", 2, 238, 6, 
-   25280903652193696121, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellLabel->
-  "During evaluation of \
-In[238]:=",ExpressionUUID->"d7f5630b-2359-403f-ba0e-a2ca8046cfc7"],
-
-Cell[BoxData[
- TemplateBox[{
-  "FindRoot", "nlnum", 
-   "\"The function value \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"\
-\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]\\) is \
-not a list of numbers with dimensions \\!\\(\\*RowBox[{\\\"{\\\", \\\"1\\\", \
-\\\"}\\\"}]\\) at \\!\\(\\*RowBox[{\\\"{\\\", \\\"x\\\", \\\"}\\\"}]\\) = \\!\
-\\(\\*RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"12.354339616427033`\\\", \\\"\
-\[VeryThinSpace]\\\"}], \\\"+\\\", RowBox[{\\\"1.1906713159764304`\\\", \\\" \
-\\\", \\\"\[ImaginaryI]\\\"}]}], \\\"}\\\"}]\\).\"", 2, 238, 7, 
-   25280903652193696121, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellLabel->
-  "During evaluation of \
-In[238]:=",ExpressionUUID->"34cbf64a-7e90-472a-85a8-581cb6616e82"],
-
-Cell[BoxData[
- TemplateBox[{
-  "General", "stop", 
-   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"FindRoot\\\", \
-\\\"::\\\", \\\"nlnum\\\"}], \\\"MessageName\\\"]\\) will be suppressed \
-during this calculation.\"", 2, 238, 8, 25280903652193696121, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellLabel->
-  "During evaluation of \
-In[238]:=",ExpressionUUID->"10063765-f100-4fd9-9e8f-7345c0493c54"],
-
-Cell[BoxData[
- TemplateBox[{
-  "FindRoot", "lstol", 
-   "\"The line search decreased the step size to within tolerance specified \
-by AccuracyGoal and PrecisionGoal but was unable to find a sufficient \
-decrease in the merit function. You may need more than \
-\\!\\(\\*RowBox[{\\\"MachinePrecision\\\"}]\\) digits of working precision to \
-meet these tolerances.\"", 2, 238, 9, 25280903652193696121, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellLabel->
-  "During evaluation of \
-In[238]:=",ExpressionUUID->"735740a4-e216-4f5f-93df-0b53e067b360"],
-
-Cell[BoxData[
- TemplateBox[{
-  "FindRoot", "lstol", 
-   "\"The line search decreased the step size to within tolerance specified \
-by AccuracyGoal and PrecisionGoal but was unable to find a sufficient \
-decrease in the merit function. You may need more than \
-\\!\\(\\*RowBox[{\\\"MachinePrecision\\\"}]\\) digits of working precision to \
-meet these tolerances.\"", 2, 238, 10, 25280903652193696121, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellLabel->
-  "During evaluation of \
-In[238]:=",ExpressionUUID->"7136a87d-01fe-4c63-8d65-b2df09b301d5"],
-
-Cell[BoxData[
- TemplateBox[{
-  "General", "stop", 
-   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"FindRoot\\\", \
-\\\"::\\\", \\\"lstol\\\"}], \\\"MessageName\\\"]\\) will be suppressed \
-during this calculation.\"", 2, 238, 11, 25280903652193696121, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellLabel->
-  "During evaluation of \
-In[238]:=",ExpressionUUID->"a5134239-1736-4443-a3ad-06a8937fc0e0"],
-
-Cell[BoxData[
- TemplateBox[{
-  "FindRoot", "lstol", 
-   "\:f3b5The line search decreased the step size to within tolerance \
-specified by AccuracyGoal and PrecisionGoal but was unable to find a \
-sufficient decrease in the merit function. You may need more than \
-MachinePrecision digits of working precision to meet these tolerances.\:f3b5",
-    2, 906, 132, 25262146090468064243, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- GeneratedCell->False,
- CellAutoOverwrite->
-  False,ExpressionUUID->"35240d0a-d90c-4b93-b4cb-dceca26d36eb"],
-
-Cell[BoxData[
- TemplateBox[{
-  "FindRoot", "lstol", 
-   "\"The line search decreased the step size to within tolerance specified \
-by AccuracyGoal and PrecisionGoal but was unable to find a sufficient \
-decrease in the merit function. You may need more than \
-\\!\\(\\*RowBox[{\\\"MachinePrecision\\\"}]\\) digits of working precision to \
-meet these tolerances.\"", 2, 906, 133, 25262146090468064243, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellLabel->
-  "During evaluation of \
-In[906]:=",ExpressionUUID->"75295787-6bf0-48aa-94ae-3aca2abcb814"],
-
-Cell[BoxData[
- TemplateBox[{
-  "General", "stop", 
-   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"FindRoot\\\", \
-\\\"::\\\", \\\"lstol\\\"}], \\\"MessageName\\\"]\\) will be suppressed \
-during this calculation.\"", 2, 906, 134, 25262146090468064243, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellLabel->
-  "During evaluation of \
-In[906]:=",ExpressionUUID->"71529057-61e0-48f7-8c30-e1351749b62e"]
-}, Open  ]],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"Export", "[", 
-   RowBox[{
-    RowBox[{
-     RowBox[{"NotebookDirectory", "[", "]"}], "<>", 
-     "\"\</output/instable_scale.csv\>\""}], ",", "scalelist"}], "]"}], 
-  ";"}]], "Input",
- CellLabel->
-  "In[239]:=",ExpressionUUID->"e323a785-de0b-4ca7-9990-f361c3162176"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -5570,24 +5383,6 @@ Cell[198365, 4391, 9508, 252, 703, "Input",ExpressionUUID->"d7ccff44-6aaf-4abf-a
 Cell[207876, 4645, 37730, 658, 434, "Output",ExpressionUUID->"fa3944b4-8d51-48c7-8ae5-3e241f9f7f42"]
 }, Open  ]]
 }, Open  ]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[245667, 5310, 87, 0, 71, "Section",ExpressionUUID->"ac60b7b7-1c8b-4967-8404-39a03f94d565"],
-Cell[CellGroupData[{
-Cell[245779, 5314, 654, 17, 51, "Input",ExpressionUUID->"89ff2e38-6a76-4b02-830e-9ba25c1c9324"],
-Cell[246436, 5333, 556, 11, 56, "Message",ExpressionUUID->"8e8aba9f-72b2-4f11-815e-8e280bc988b8"],
-Cell[246995, 5346, 759, 14, 24, "Message",ExpressionUUID->"6690cbfc-f77d-4804-912f-ef923632fb7c"],
-Cell[247757, 5362, 928, 17, 49, "Message",ExpressionUUID->"d7f5630b-2359-403f-ba0e-a2ca8046cfc7"],
-Cell[248688, 5381, 759, 14, 24, "Message",ExpressionUUID->"34cbf64a-7e90-472a-85a8-581cb6616e82"],
-Cell[249450, 5397, 413, 9, 24, "Message",ExpressionUUID->"10063765-f100-4fd9-9e8f-7345c0493c54"],
-Cell[249866, 5408, 556, 11, 56, "Message",ExpressionUUID->"735740a4-e216-4f5f-93df-0b53e067b360"],
-Cell[250425, 5421, 557, 11, 56, "Message",ExpressionUUID->"7136a87d-01fe-4c63-8d65-b2df09b301d5"],
-Cell[250985, 5434, 414, 9, 24, "Message",ExpressionUUID->"a5134239-1736-4443-a3ad-06a8937fc0e0"],
-Cell[251402, 5445, 540, 11, 56, "Message",ExpressionUUID->"35240d0a-d90c-4b93-b4cb-dceca26d36eb"],
-Cell[251945, 5458, 558, 11, 56, "Message",ExpressionUUID->"75295787-6bf0-48aa-94ae-3aca2abcb814"],
-Cell[252506, 5471, 415, 9, 24, "Message",ExpressionUUID->"71529057-61e0-48f7-8c30-e1351749b62e"]
-}, Open  ]],
-Cell[252936, 5483, 302, 9, 31, "Input",ExpressionUUID->"e323a785-de0b-4ca7-9990-f361c3162176"]
 }, Open  ]]
 }, Open  ]]
 }
