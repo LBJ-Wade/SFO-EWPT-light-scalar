@@ -595,8 +595,13 @@ int BounceCalculator::writeBounce(const char *file_name) const{
 	std::ofstream csv_file;
 	csv_file.open(file_name);
 	std::cout << "write the bounce into " << file_name << std::endl;
-
+	csv_file << "r,";
+	for(int iphi=0;iphi<nphi();iphi++){
+		csv_file << "phi[" << iphi << "],";
+	}
+	csv_file << "\n";
 	for(int i=0; i<n(); i++){
+		csv_file << rBounce(i) << ",";
 		for(int iphi=0;iphi<nphi(); iphi++){
 			csv_file << phi(i,iphi) << ",";
 		}

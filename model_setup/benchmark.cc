@@ -84,7 +84,7 @@ int main() {
 	bounce.setModel(&model);
 
 	double phiTV[2] = {15.,150.}; // a point at which V<0
-	double phiFV[2] = {0.868666,0.838824}; // false vacuum
+	double phiFV[2] = {0.86,0.81}; // false vacuum
 	bounce.setVacuum(phiTV, phiFV);
 
 	// calcualte the bounce solution
