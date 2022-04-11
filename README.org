@@ -10,7 +10,7 @@ This is the source code for the paper "Strong First Order Electroweak Phase Tran
 - [[#introduction][Introduction]]
 - [[#model-setup][Model setup]]
   - [[#mass-spectrum-and-parametrization][Mass spectrum and parametrization]]
-  - [[#uv-scale][UV scale]]
+  - [[#vacuum-stability][Vacuum stability]]
 - [[#phase-transition][Phase Transition]]
   - [[#high-temperature-expansion][High-temperature expansion]]
 - [[#higgs-signal][Higgs Signal]]
@@ -23,8 +23,8 @@ The scalar mass spectrum are calculated in Mathematica code [[file:model_setup/m
 Masses for other relevant particles such as gauge bosons and fermions are trivial, and did not included in any code.
 
 We need to transfer from the bare parameters to observable physical parameters. This process is performed by Mathematica in the same [[file:model_setup/mass_spectrum.nb][code]].
-** UV scale
-This model predicts that the Higgs potential must become unstable on some UV scale, which depends on the new parameters. Above that UV scale, new physics must enter to alternate the running. This is calculated in [[file:model_setup/instability.nb][instability.nb]]. The physics running of the trilinear coupling is included. Different approximations are applied and explained there.
+** Vacuum stability
+The vacuum stability is calculated with the modified version of =simplebounce= code. The model file is written in [[file:model_setup/benchmark.cc][benchmark.cc]].
 * Phase Transition
 The phase transition is calculated both semi-analytically using the high-temperature expansion and in full numerical analysis.
 

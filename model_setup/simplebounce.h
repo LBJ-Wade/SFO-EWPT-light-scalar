@@ -98,6 +98,7 @@ class BounceCalculator : public Scalarfield {
 	double getlambda() const;
 	int printBounce() const;
 	int printBounceDetails() const;
+	int writeBounce(const char *file_name) const;
 
 	void setSafetyfactor(double x);
 	void setMaximumvariation(double x);

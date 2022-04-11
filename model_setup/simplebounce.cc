@@ -1,6 +1,7 @@
 #include<iostream>
 #include<cmath>
 #include"simplebounce.h"
+#include <fstream>
 
 namespace simplebounce{
 
@@ -579,6 +580,29 @@ int BounceCalculator::printBounce() const{
 		std::cout << std::endl;
 	}
 
+	return 0;
+}
+
+int BounceCalculator::writeBounce(const char *file_name) const{
+	if(!setModelDone){
+		std::cerr << "!!! model has not been set yet !!!"<< std::endl;
+		return -1;
+		}
+	if(!setVacuumDone){
+		std::cerr << "!!! correct vacua have not been set yet !!!" << std::endl;
+		return -1;
+		}
+	std::ofstream csv_file;
+	csv_file.open(file_name);
+	std::cout << "write the bounce into " << file_name << std::endl;
+
+	for(int i=0; i<n(); i++){
+		for(int iphi=0;iphi<nphi(); iphi++){
+			csv_file << phi(i,iphi) << ",";
+		}
+		csv_file << "\n";
+	}
+	csv_file.close();
 	return 0;
 }
 
