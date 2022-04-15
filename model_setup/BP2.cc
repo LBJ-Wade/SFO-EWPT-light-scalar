@@ -1,4 +1,4 @@
-// table 1 (2 fields) of 1901.03714
+// benchmark point for mS = 15 GeV and sin\theta = 0.3
 #define _USE_MATH_DEFINES // for C++
 #include<iostream>
 #include<cmath>
@@ -18,21 +18,23 @@ class MyModel : public GenericModel{
     double gY;
     double yt;
     double Qsq;
+    double v;
 	  MyModel(){
 	  	  setNphi(2);
-        lambda = 0.131082;
-        A = .104746;
-        muH = .931186;
-        muS = .215215;
-        g = 0.65;
-        gY = 0.36;
-        yt = 0.9945;
-        Qsq = 1.50*1.50;
+          lambda = 0.123256;
+          A = 0.179101;
+          muH = 0.905382;
+          muS = 0.401373;
+          g = 0.65;
+          gY = 0.36;
+          yt = 0.9945;
+          Qsq = 1.500*1.500;
+          v=2.46073;
 	}
 
 	  // potential of scalar field(s)
 	  double vpot(const double* phi) const{
-      double vtree = (0.25*lambda*phi[0]*phi[0]*phi[0]*phi[0]-0.5*muH*muH*phi[0]*phi[0]+0.5*muS*muS*phi[1]*phi[1]-0.5*A*phi[1]*(phi[0]*phi[0]-2.46*2.46));
+      double vtree = (0.25*lambda*phi[0]*phi[0]*phi[0]*phi[0]-0.5*muH*muH*phi[0]*phi[0]+0.5*muS*muS*phi[1]*phi[1]-0.5*A*phi[1]*(phi[0]*phi[0]-v*v));
       double mW = (g*g*phi[0]*phi[0]*0.25);
       double mZ = ((g*g+gY*gY)*phi[0]*phi[0]*0.25);
       double mt = (yt*yt*phi[0]*phi[0]*0.5);
@@ -48,22 +50,10 @@ class MyModel : public GenericModel{
       double mWd = (g*g*phi[0]*0.5);
       double mZd = ((g*g+gY*gY)*phi[0]*0.5);
       double mtd = (yt*yt*phi[0]);
-	  	dvdphi[0] = lambda*phi[0]*phi[0]*phi[0] - muH*muH*phi[0]-A*phi[1]*phi[0]+(6*mW*mWd*(2*log(mW/Qsq)-2./3)+3*mZ*mZd*(2*log(mZ/Qsq)-2./3)-12*mt*mtd*(2*log(mt/Qsq)-2.))/(64*M_PI*M_PI);
-	  	dvdphi[1] = muS*muS*phi[1]-0.5*A*(phi[0]*phi[0]-2.46*2.46);
+      dvdphi[0] = lambda*phi[0]*phi[0]*phi[0] - muH*muH*phi[0]-A*phi[1]*phi[0]+(6*mW*mWd*(2*log(mW/Qsq)-2./3)+3*mZ*mZd*(2*log(mZ/Qsq)-2./3)-12*mt*mtd*(2*log(mt/Qsq)-2.))/(64*M_PI*M_PI);
+      dvdphi[1] = muS*muS*phi[1]-0.5*A*(phi[0]*phi[0]-v*v);
 	  }
 
-//    void dvdphi(const double* phi) const{
-//      double dv[2];
-//      double mW = (g*g*phi[0]*phi[0]*0.25);
-//      double mZ = ((g*g+gY*gY)*phi[0]*phi[0]*0.25);
-//      double mt = (yt*yt*phi[0]*phi[0]*0.5);
-//      double mWd = (g*g*phi[0]*0.5);
-//      double mZd = ((g*g+gY*gY)*phi[0]*0.5);
-//      double mtd = (yt*yt*phi[0]);
-//      dv[0] = lambda*phi[0]*phi[0]*phi[0] - muH*muH*phi[0]-A*phi[1]*phi[0]+(6*mW*mWd*(2*log(mW/Qsq)-2./3)+3*mZ*mZd*(2*log(mZ/Qsq)-2./3)-12*mt*mtd*(2*log(mt/Qsq)-2.))/(64*M_PI*M_PI);
-//      dv[1] = muS*muS*phi[1]-0.5*A*phi[0]*phi[0];
-//      cout << "dvdh = " << dv[0] << ", dvdS = " << dv[1] << endl;
-//    }
 
 };
 
@@ -71,9 +61,8 @@ class MyModel : public GenericModel{
 
 
 int main() {
-
-	BounceCalculator bounce;
-  bounce.verboseOn();
+    BounceCalculator bounce;
+    bounce.verboseOn();
 	bounce.setRmax(1); // phi(rmax) = phi(False vacuum)
 	bounce.setDimension(4); // number of space dimension
 	bounce.setN(100); // number of grid
@@ -83,15 +72,15 @@ int main() {
   //model.dvdphi(location);
 	bounce.setModel(&model);
 
-	double phiTV[2] = {50.,1000.}; // a point at which V<0
-	double phiFV[2] = {2.46,0.}; // false vacuum
+	double phiTV[2] = {10.,52.2211}; // a point at which V<0
+	double phiFV[2] = {2.46073,0.}; // false vacuum
 	bounce.setVacuum(phiTV, phiFV);
-  cout << "potential at the minimum: " << model.vpot(phiFV) << endl;
+    cout << "potential at the minimum: " << model.vpot(phiFV) << endl;
 	// calcualte the bounce solution
 	bounce.solve();
 
-  bounce.printBounce();
-  bounce.writeBounce("output/benchmark.csv");
+    bounce.printBounce();
+    bounce.writeBounce("output/BP2.csv");
 	// Euclidean action
 	cout << "S_E = " << bounce.action() << endl;
 
