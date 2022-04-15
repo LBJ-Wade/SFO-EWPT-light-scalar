@@ -6,6 +6,8 @@
 * Introduction
 This branch records some early trial on the unstable scale. The calculation results from the code in this branch are trials that fails to give results to be shown in the final paper. But the trial process are useful and should be recorded. To get the code that gives the results in the paper, please see the master branch.
 
+This analysis is based on the fact that the tree-level scalar quartic coupling should be non-negative. This can also be seen from the tree-level scalar vev. Thus we keep the [[file:mass_spectrum.nb][analytical computation]] of these stuffs on this branch.
+
 * Bounce solution for the Euclidean action of tunneling rate
 The effective potential at the zero temperature is calculated in both 2d dynamics, and in 1d dynamics with the light scalar integrated out.
 
