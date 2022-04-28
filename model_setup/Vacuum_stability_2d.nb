@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    666706,      12260]
+NotebookDataLength[    666705,      12260]
 NotebookOptionsPosition[    657804,      12109]
-NotebookOutlinePosition[    658209,      12125]
-CellTagsIndexPosition[    658166,      12122]
+NotebookOutlinePosition[    658208,      12125]
+CellTagsIndexPosition[    658165,      12122]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -6262,7 +6262,7 @@ mgTkGxxVFH5ffmDKcq7MgBwg/4br+uaq6gOGRRuNFXIPwsMTADIpoi4=
   "Out[378]=",ExpressionUUID->"90afce4b-c116-46a3-9759-e60a823fddff"]
 }, Open  ]]
 }, Open  ]]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -12108,7 +12108,7 @@ do not solve the problem."
 }, Open  ]]
 },
 WindowSize->{963, 847},
-WindowMargins->{{201, Automatic}, {Automatic, 10}},
+WindowMargins->{{Automatic, 27}, {Automatic, 67}},
 FrontEndVersion->"13.0 for Mac OS X x86 (64-bit) (February 4, 2022)",
 StyleDefinitions->"Cambria Article.nb",
 ExpressionUUID->"9b3740f9-2f1d-46c8-acac-1816dc6f4f44"
@@ -12192,7 +12192,7 @@ Cell[231135, 4421, 53324, 900, 276, "Output",ExpressionUUID->"cf1a70e4-3e3f-486b
 Cell[284462, 5323, 55045, 938, 270, "Output",ExpressionUUID->"90afce4b-c116-46a3-9759-e60a823fddff"]
 }, Open  ]]
 }, Open  ]]
-}, Closed]],
+}, Open  ]],
 Cell[CellGroupData[{
 Cell[339568, 6268, 106, 0, 41, "Section",ExpressionUUID->"c6b6e551-4d13-4eb7-bb7f-bc7cc56f3b69"],
 Cell[339677, 6270, 400, 10, 28, "TextIndent",ExpressionUUID->"cb9386bf-4dc4-46f5-9834-358b2f571b2d"],

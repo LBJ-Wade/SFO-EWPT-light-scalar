@@ -1,0 +1,37 @@
+# -*- org -*-
+#+TITLE: Negative argument of the integrals
+#+AUTHOR: Isaac R. Wang
+#+EMAIL: isaac.wang.us@gmail.com
+#+STARTUP: fold
+* Introduction
+The integral \(J_B\) and \(J_F\) in the finite temperature effective potential must be treated properly when negative argument is passed into it. Unlike the logarithm function in the Coleman-Weinberg correction, where taking the real part can be done by naively taking the absolute value of the argument, the real part of this function is not that simple. This note deal with that problem.
+
+* Analytical computation
+The integral of \(J_B\) is expressed by
+\begin{align*}
+\label{eq:1}
+J_B(\alpha) = \int_0^{\infty}dx x^2 \log \left (1- \exp \left(-\sqrt{x^2+\alpha}\right)  \right )
+\end{align*}
+The argument \(\alpha\) corresponds to the field-and-temperature-dependent mass square. In most of the cases, this quantity for the scalar sector particles can be negative. When \(\alpha < 0\), imaginary part appears from the square root for \(x^2 < -\alpha\). Thus the integral is separated into 2 parts: for smaller \(x\), we should deal with it to take its real part, while for larger \(x\) we can simply keep it.
+
+For \(x^2<-\alpha\), the square root becomes
+\begin{align*}
+\label{eq:2}
+\sqrt{x^2 + \alpha} = i \sqrt{-x^2-\alpha} \equiv i k
+\end{align*}
+And then the logarithm becomes
+\begin{align*}
+\label{eq:3}
+\log \left (1-\exp \left (-ik  \right )  \right ) = \log \left (1 - \cos k + i \sin k  \right )
+\end{align*}
+The real part is
+\begin{align*}
+\label{eq:4}
+\log \left (\sqrt{(1-\cos k)^2 + \sin^2 k}\right ) =\log \left ( \sqrt{2(1-\cos k)} \right )=\log \left ( 2 |\sin \frac{k}{2}|\right )
+\end{align*}
+Similarly for \(J_F\), the logarithm becomes
+\begin{align*}
+\label{eq:5}
+\log \left (2 |\cos \frac{k}{2}|  \right )
+\end{align*}
+And for both boson and fermion, this logarithm format should be used for \(0<x<\sqrt{-\alpha}\) for a negative argument.
